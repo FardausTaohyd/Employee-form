@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e1eff0;
+    text-align: center; 
+    padding: 40px;
+}
+
+form {
+    margin: 30px auto;
+    width: 420px;
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    text-align: left; 
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    color: #222;
+    font-weight: 500;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 18px 0;
+    box-sizing: border-box;
+    border: 1px solid #b0c4c9;
+    border-radius: 6px;
+    background: #f7fafc;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    margin: 10px 8px 0 0;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button[name="save"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[name="save"]:hover {
+    background-color: #388e3c;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #c62828;
+}
+
+hr {
+    margin: 32px 0;
+    border: none;
+    border-top: 1px solid #b0c4c9;
+}

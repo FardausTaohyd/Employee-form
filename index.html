@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Data Entry Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Employee Data Entry Form</h2>
+
+    <form action="insert.php" method="POST">
+        <label>Emp ID: <input type="text" name="emp_id" required></label><br>
+        <label>Employee Name: <input type="text" name="name" required></label><br>
+        <label>Gender:
+            <select name="gender" required>
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </label><br>
+        <label>Email ID: <input type="email" name="email" required></label><br>
+        <label>Department: <input type="text" name="department" required></label><br>
+        <label>Address: <textarea name="address" rows="4" required></textarea></label><br>
+
+        <button type="submit" name="save">Save</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <hr>
+
+    <h3>Search Employee by ID</h3>
+    <form action="search.php" method="GET">
+        <input type="text" name="emp_id" required placeholder="Enter Emp ID">
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
